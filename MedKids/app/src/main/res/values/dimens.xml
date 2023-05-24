@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_progress_bar">137dp</dimen>
+    <dimen name="height_progress_bar">116dp</dimen>
+    <dimen name="top_progress_bar">50dp</dimen>
+    <dimen name="top_img">32dp</dimen>
+    <dimen name="height_img_mk">400dp</dimen>
+    <dimen name="padding_first_view">12dp</dimen>
+    <dimen name="width_fragment_view">409dp</dimen>
+    <dimen name="height_fragment_view">729dp</dimen>
+</resources>

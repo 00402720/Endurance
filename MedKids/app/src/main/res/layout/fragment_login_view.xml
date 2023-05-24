@@ -39,7 +39,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/filledTextField"
-            android:layout_width="dp"
+            android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:hint="Marcela Ruiz"
             app:boxBackgroundColor="@color/white">

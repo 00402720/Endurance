@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MedKids" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Customize your dark theme here. -->
-        <item name="colorPrimary">#647C67</item>
+        <item name="android:statusBarColor">@color/statusbarnight</item>
 
     </style>
 </resources>
