@@ -3,18 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/firstView">
-    <fragment
-        android:id="@+id/firstView"
-        android:name="com.endurance.medkids.ui.login.FirstView"
-        android:label="FirstView" >
-        <action
-            android:id="@+id/action_firstView_to_loadingView"
-            app:destination="@id/loadingView" />
-    </fragment>
+    app:startDestination="@id/loadingView">
     <fragment
         android:id="@+id/loadingView"
         android:name="com.endurance.medkids.ui.login.LoadingView"
         android:label="fragment_loading_view"
-        tools:layout="@layout/fragment_loading_view" />
+        tools:layout="@layout/fragment_loading_view" >
+        <action
+            android:id="@+id/action_loadingView_to_loginView"
+            app:destination="@id/loginView" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginView"
+        android:name="com.endurance.medkids.ui.login.LoginView"
+        android:label="LoginView" >
+        <action
+            android:id="@+id/action_loginView_to_contentView"
+            app:destination="@id/contentView" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentView"
+        android:name="com.endurance.medkids.ui.infoView.ContentView"
+        android:label="ContentView" >
+        <action
+            android:id="@+id/action_contentView_to_infoView"
+            app:destination="@id/infoView" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoView"
+        android:name="com.endurance.medkids.ui.infoView.InfoView"
+        android:label="InfoView" />
 </navigation>

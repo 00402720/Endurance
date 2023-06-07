@@ -9,9 +9,10 @@
     <color name="statusbar">#84B58B</color>
     <color name="statusbarnight">#39513D</color>
     <color name="progressbar">#9F9D9D</color>
-
-    <color name="card_respiratoryS">#EEACCF</color>
+    <color name="background_text">#4D6E74</color>
+    <color name="card_respiratory">#EEACCF</color>
     <color name="card_estomago">#EEC3AC</color>
     <color name="card_vejiga">#EEACAC</color>
     <color name="card_cerebro">#EEE7AC</color>
+    <color name="card_emoji">#F5F5F5</color>
 </resources>

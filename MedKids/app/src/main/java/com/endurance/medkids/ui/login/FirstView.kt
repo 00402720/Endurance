@@ -30,7 +30,6 @@ import com.endurance.medkids.databinding.FragmentFirstViewBinding
                     .setExitAnim(R.anim.fade_out) // Animación de salida con desvanecimiento
                     .build()
 
-                findNavController().navigate(R.id.action_firstView_to_loadingView, null, navOptions)
 
             }, 3000)
 
