@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+   <data>
+      <!-- Define tus variables de datos aquí, si las tienes -->
+   </data>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="565dp"
+             android:background="@color/background">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_learn_about"
+                android:layout_width="324dp"
+                android:layout_height="219dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/button_guestLogin"
+                android:padding="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardMaxElevation="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:orientation="vertical"
+                   android:padding="12dp">
+
+                  <ImageView
+                      android:layout_width="150dp"
+                      android:layout_height="150dp"
+                      android:src="@drawable/cerebelo" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="180dp"
+                   android:layout_marginTop="80dp"
+                   android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-medium"
+                      android:text="@string/titlecard"
+                      android:textColor="@color/black"
+                      android:textSize="19sp"
+                      android:textStyle="bold" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="162dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="170dp"
+                   android:layout_marginTop="100dp"
+                   android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-medium"
+                      android:text="@string/tittle2"
+                      android:textColor="@color/black"
+                      android:textSize="19sp"
+                      android:textStyle="bold" />
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="324dp"
+                android:layout_height="219dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/card_emoji"
+                android:padding="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardMaxElevation="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView_learn_about">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:orientation="vertical"
+                   android:padding="12dp">
+
+                  <ImageView
+                      android:layout_width="150dp"
+                      android:layout_height="150dp"
+                      android:src="@drawable/emoji" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="180dp"
+                   android:layout_marginTop="80dp"
+                   android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-medium"
+                      android:text="@string/titlecard2"
+                      android:textColor="@color/black"
+                      android:textSize="25sp"
+                      android:textStyle="bold" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="200dp"
+                   android:layout_marginTop="105dp"
+                   android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-medium"
+                      android:text="@string/tittlecard3"
+                      android:textColor="@color/black"
+                      android:textSize="19sp"
+                      android:textStyle="bold" />
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:background="@color/background_text">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                   android:text="@string/titlefi"
+                   android:textAlignment="center"
+                   android:textColor="@color/white"
+                   android:textSize="30sp"
+                   android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="¿"
+                   android:textColor="@color/button_guestLogin"
+                   android:textSize="150dp"
+                   android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="75dp"
+
+                android:orientation="vertical">
+
+               <me.biubiubiu.justifytext.library.JustifyTextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center_vertical"
+                   android:layout_margin="10dp"
+                   android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                   android:textColor="@color/white"
+                   android:textSize="20sp"
+                  />
+            </LinearLayout>
+
+         </FrameLayout>
+      </LinearLayout>
+   </ScrollView>
+</layout>
+
