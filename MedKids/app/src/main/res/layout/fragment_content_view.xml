@@ -1,167 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-<layout xmlns:tools="http://schemas.android.com/tools"
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
->
+    xmlns:tools="http://schemas.android.com/tools">
+   <data>
+      <!-- Define tus variables de datos aquí, si las tienes -->
+   </data>
 
-
-<data>
-   <!-- Define tus variables de datos aquí, si las tienes -->
-</data>
-
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
-
-
-   <FrameLayout
+   <ScrollView
        android:layout_width="match_parent"
-       android:layout_height="wrap_content">
+       android:layout_height="match_parent"
+       android:fillViewport="true">
 
-      <androidx.constraintlayout.widget.ConstraintLayout
+      <LinearLayout
           android:layout_width="match_parent"
-          android:background="@color/background"
-          android:layout_height="match_parent">
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
 
-         <androidx.cardview.widget.CardView
-             android:id="@+id/cardView_learn_about"
-             android:layout_width="324dp"
-             android:layout_height="219dp"
-             android:layout_marginTop="30dp"
-             android:backgroundTint="@color/button_guestLogin"
-             android:padding="16dp"
-             app:cardCornerRadius="15dp"
-             app:cardMaxElevation="30dp"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toTopOf="parent">
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="565dp"
+             android:background="@color/background">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:orientation="vertical"
-                android:padding="12dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_learn_about"
+                android:layout_width="324dp"
+                android:layout_height="219dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/button_guestLogin"
+                android:padding="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardMaxElevation="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-               <ImageView
-                   android:layout_width="150dp"
-                   android:layout_height="150dp"
-                   android:src="@drawable/cerebelo" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="180dp"
-                android:layout_marginTop="80dp"
-                android:orientation="horizontal">
-
-               <TextView
+               <LinearLayout
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:fontFamily="sans-serif-medium"
-                   android:text="LEARN ABOUT"
-                   android:textColor="@color/black"
-                   android:textSize="19sp"
-                   android:textStyle="bold" />
-            </LinearLayout>
+                   android:layout_gravity="center_vertical"
+                   android:orientation="vertical"
+                   android:padding="12dp">
 
-            <LinearLayout
-                android:layout_width="162dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="170dp"
-                android:layout_marginTop="100dp"
-                android:orientation="horizontal">
+                  <ImageView
+                      android:layout_width="150dp"
+                      android:layout_height="150dp"
+                      android:src="@drawable/cerebelo" />
+               </LinearLayout>
 
-               <TextView
+               <LinearLayout
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:fontFamily="sans-serif-medium"
-                   android:text="The human body!"
-                   android:textColor="@color/black"
-                   android:textSize="19sp"
-                   android:textStyle="bold" />
+                   android:layout_marginStart="180dp"
+                   android:layout_marginTop="80dp"
+                   android:orientation="horizontal">
 
-            </LinearLayout>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-medium"
+                      android:text="@string/titlecard"
+                      android:textColor="@color/black"
+                      android:textSize="19sp"
+                      android:textStyle="bold" />
+               </LinearLayout>
 
-         </androidx.cardview.widget.CardView>
+               <LinearLayout
+                   android:layout_width="162dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="170dp"
+                   android:layout_marginTop="100dp"
+                   android:orientation="horizontal">
 
-         <androidx.cardview.widget.CardView
-             android:id="@+id/cardView2"
-             android:layout_width="324dp"
-             android:layout_height="219dp"
-             android:layout_marginTop="20dp"
-             android:backgroundTint="@color/card_emoji"
-             android:padding="16dp"
-             app:cardCornerRadius="15dp"
-             app:cardMaxElevation="30dp"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/cardView_learn_about">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-medium"
+                      android:text="@string/tittle2"
+                      android:textColor="@color/black"
+                      android:textSize="19sp"
+                      android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:orientation="vertical"
-                android:padding="12dp">
+               </LinearLayout>
 
-               <ImageView
-                   android:layout_width="150dp"
-                   android:layout_height="150dp"
-                   android:src="@drawable/emoji" />
-            </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="180dp"
-                android:layout_marginTop="80dp"
-                android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="324dp"
+                android:layout_height="219dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/card_emoji"
+                android:padding="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardMaxElevation="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView_learn_about">
 
-               <TextView
+               <LinearLayout
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:fontFamily="sans-serif-medium"
-                   android:text="TEST YOUR"
-                   android:textColor="@color/black"
-                   android:textSize="25sp"
-                   android:textStyle="bold" />
-            </LinearLayout>
+                   android:layout_gravity="center_vertical"
+                   android:orientation="vertical"
+                   android:padding="12dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="200dp"
-                android:layout_marginTop="105dp"
-                android:orientation="horizontal">
+                  <ImageView
+                      android:layout_width="150dp"
+                      android:layout_height="150dp"
+                      android:src="@drawable/emoji" />
+               </LinearLayout>
 
-               <TextView
+               <LinearLayout
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:fontFamily="sans-serif-medium"
-                   android:text="knowledge"
-                   android:textColor="@color/black"
-                   android:textSize="19sp"
-                   android:textStyle="bold" />
+                   android:layout_marginStart="180dp"
+                   android:layout_marginTop="80dp"
+                   android:orientation="horizontal">
 
-            </LinearLayout>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-medium"
+                      android:text="@string/titlecard2"
+                      android:textColor="@color/black"
+                      android:textSize="25sp"
+                      android:textStyle="bold" />
+               </LinearLayout>
 
-         </androidx.cardview.widget.CardView>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="200dp"
+                   android:layout_marginTop="105dp"
+                   android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fontFamily="sans-serif-medium"
+                      android:text="@string/tittlecard3"
+                      android:textColor="@color/black"
+                      android:textSize="19sp"
+                      android:textStyle="bold" />
+
+               </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
 
          <FrameLayout
-             android:layout_width="417dp"
-             android:layout_height="351dp"
-             android:layout_marginTop="75dp"
-             android:background="@color/background_text"
-             app:layout_constraintBottom_toBottomOf="parent"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toBottomOf="@+id/cardView2">
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:background="@color/background_text">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -172,7 +164,7 @@
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
                    android:padding="10dp"
-                   android:text="¡DATO DE HOY!"
+                   android:text="@string/titlefi"
                    android:textAlignment="center"
                    android:textColor="@color/white"
                    android:textSize="30sp"
@@ -210,29 +202,14 @@
                    android:layout_height="match_parent"
                    android:layout_gravity="center_vertical"
                    android:layout_margin="10dp"
-                   android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                   android:textSize="20sp" />
+                   android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                   android:textColor="@color/white"
+                   android:textSize="20sp"
+                  />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="335dp"
-                android:layout_marginTop="65dp"
-                android:orientation="vertical">
 
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="?"
-                   android:textColor="@color/button_guestLogin"
-                   android:textSize="150dp"
-                   android:textStyle="bold" />
-            </LinearLayout>
          </FrameLayout>
-
-      </androidx.constraintlayout.widget.ConstraintLayout>
-   </FrameLayout>
-
-</ScrollView>
-
+      </LinearLayout>
+   </ScrollView>
 </layout>
+

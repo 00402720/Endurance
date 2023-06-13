@@ -32,5 +32,13 @@
     <fragment
         android:id="@+id/infoView"
         android:name="com.endurance.medkids.ui.infoView.InfoView"
-        android:label="InfoView" />
+        android:label="InfoView" >
+        <action
+            android:id="@+id/action_infoView_to_respiratoryView"
+            app:destination="@id/respiratoryView" />
+    </fragment>
+    <fragment
+        android:id="@+id/respiratoryView"
+        android:name="com.endurance.medkids.ui.respiratoryView.RespiratoryView"
+        android:label="RespiratoryView" />
 </navigation>
