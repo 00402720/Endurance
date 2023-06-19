@@ -28,8 +28,11 @@ class LoginView : Fragment() {
 
 
         binding.btnLogin.setOnClickListener {
-            it.findNavController().navigate(R.id.action_loginView_to_contentView)
+            it.findNavController().navigate(R.id.btnLogin)
+        }
+
+        binding.btnReturn.setOnClickListener{
+            it.findNavController().navigate(R.id.action_loginView_to_loadingView)
         }
     }
-
 }

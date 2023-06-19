@@ -18,8 +18,11 @@
         android:name="com.endurance.medkids.ui.login.LoginView"
         android:label="LoginView" >
         <action
-            android:id="@+id/action_loginView_to_contentView"
+            android:id="@+id/btnLogin"
             app:destination="@id/contentView" />
+        <action
+            android:id="@+id/action_loginView_to_loadingView"
+            app:destination="@id/loadingView" />
     </fragment>
     <fragment
         android:id="@+id/contentView"
