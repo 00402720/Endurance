@@ -41,6 +41,10 @@ class LoadingView : Fragment() {
         binding.btnLoginLoadingView.setOnClickListener {
             it.findNavController().navigate(R.id.action_loadingView_to_loginView)
         }
+
+        binding.btnToRegister.setOnClickListener {
+            it.findNavController().navigate(R.id.action_loadingView_to_sign_Up)
+        }
     }
 }
 

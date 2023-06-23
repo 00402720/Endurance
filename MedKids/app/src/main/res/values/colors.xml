@@ -16,4 +16,6 @@
     <color name="card_cerebro">#EEE7AC</color>
     <color name="card_emoji">#F5F5F5</color>
     <color name="sesion_card">#D9D9D9</color>
+    <color name="link_color">#4D6E74</color>
+    <color name="register_button">#91D3F8</color>
 </resources>

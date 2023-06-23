@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.core.widget.NestedScrollView
@@ -17,7 +18,27 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="700dp">
+                android:layout_height="700dp"
+                android:background="@color/background">
+
+                <Button
+                    android:id="@+id/btn_to_register"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/background"
+                    android:elevation="0dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:stateListAnimator="@null"
+                    android:text="here"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="@color/link_color"
+                    android:textColorLink="#29A0AF"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/button2" />
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/shapeableImageView"
@@ -68,12 +89,14 @@
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="120dp"
-                    android:text="Don't have an account? Click here"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Don't have an account? Click"
                     android:textColor="@color/black"
                     android:textSize="20sp"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.35"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/button2" />
 

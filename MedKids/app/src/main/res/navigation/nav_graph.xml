@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_loadingView_to_loginView"
             app:destination="@id/loginView" />
+        <action
+            android:id="@+id/action_loadingView_to_sign_Up"
+            app:destination="@id/sign_Up" />
     </fragment>
     <fragment
         android:id="@+id/loginView"
@@ -44,4 +47,13 @@
         android:id="@+id/respiratoryView"
         android:name="com.endurance.medkids.ui.respiratoryView.RespiratoryView"
         android:label="RespiratoryView" />
+    <fragment
+        android:id="@+id/sign_Up"
+        android:name="com.endurance.medkids.ui.sign_up.Sign_Up"
+        android:label="fragment_sign__up"
+        tools:layout="@layout/fragment_sign__up" >
+        <action
+            android:id="@+id/action_sign_Up_to_loadingView"
+            app:destination="@id/loadingView" />
+    </fragment>
 </navigation>
