@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.endurance.medkids.R
 import com.endurance.medkids.data.model.CardInfoModel
 import com.endurance.medkids.databinding.FragmentInfoViewBinding
 import com.endurance.medkids.ui.infoView.recyclerview.CardRecyclerViewAdapter
@@ -35,10 +37,12 @@ class InfoView : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setRecyclerView(view)
+
     }
 
     private fun showSelectedItem(card : CardInfoModel){
         cardInfoViewModel.setSelectedCard(card)
+        findNavController().navigate(R.id.action_infoView_to_systemView)
     }
     private fun displayCard(){
         adapter.setData(cardInfoViewModel.getCards())

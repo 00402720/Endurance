@@ -3,6 +3,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:background="@color/background"
@@ -59,6 +60,7 @@
         android:id="@+id/card_item_view"
         android:layout_width="383dp"
         android:layout_height="682dp"
+        android:layout_marginTop="20dp"
 
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +70,9 @@
         tools:itemCount="4"
         tools:listitem="@layout/item_card_info">
 
+
     </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>
