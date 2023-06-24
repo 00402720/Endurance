@@ -34,5 +34,9 @@ class LoginView : Fragment() {
         binding.btnReturn.setOnClickListener{
             it.findNavController().navigate(R.id.action_loginView_to_loadingView)
         }
+
+        binding.fgtPasswrdBtn.setOnClickListener {
+            it.findNavController().navigate(R.id.action_loginView_to_forgotCredentials)
+        }
     }
 }

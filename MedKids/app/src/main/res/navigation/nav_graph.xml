@@ -11,10 +11,12 @@
         tools:layout="@layout/fragment_loading_view" >
         <action
             android:id="@+id/action_loadingView_to_loginView"
-            app:destination="@id/loginView" />
+            app:destination="@id/loginView"
+            app:enterAnim="@anim/slide_in" />
         <action
             android:id="@+id/action_loadingView_to_sign_Up"
-            app:destination="@id/sign_Up" />
+            app:destination="@id/sign_Up"
+            app:enterAnim="@anim/slide_in" />
     </fragment>
     <fragment
         android:id="@+id/loginView"
@@ -22,10 +24,16 @@
         android:label="LoginView" >
         <action
             android:id="@+id/btnLogin"
-            app:destination="@id/contentView" />
+            app:destination="@id/contentView"
+            app:enterAnim="@anim/slide_in" />
         <action
             android:id="@+id/action_loginView_to_loadingView"
-            app:destination="@id/loadingView" />
+            app:destination="@id/loadingView"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_loginView_to_forgotCredentials"
+            app:destination="@id/forgotCredentials"
+            app:enterAnim="@anim/slide_in" />
     </fragment>
     <fragment
         android:id="@+id/contentView"
@@ -54,6 +62,16 @@
         tools:layout="@layout/fragment_sign__up" >
         <action
             android:id="@+id/action_sign_Up_to_loadingView"
-            app:destination="@id/loadingView" />
+            app:destination="@id/loadingView"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotCredentials"
+        android:name="com.endurance.medkids.ui.login.ForgotCredentials"
+        android:label="ForgotCredentials" >
+        <action
+            android:id="@+id/action_forgotCredentials_to_loginView"
+            app:destination="@id/loginView"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
 </navigation>

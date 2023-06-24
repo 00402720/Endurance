@@ -62,8 +62,7 @@
                         android:id="@+id/user_ti"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@color/white"
-                        android:backgroundTint="@color/white"
+                        android:background="@android:drawable/edit_text"
                         android:shadowRadius="15"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -88,8 +87,7 @@
                         android:id="@+id/email_ti"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@color/white"
-                        android:backgroundTint="@color/white"
+                        android:background="@android:drawable/edit_text"
                         android:inputType="textPassword"
                         android:shadowRadius="15"
                         android:textColor="@color/black"
@@ -116,8 +114,7 @@
                         android:id="@+id/password_ti"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:background="@color/white"
-                        android:backgroundTint="@color/white"
+                        android:background="@android:drawable/edit_text"
                         android:shadowRadius="15"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
