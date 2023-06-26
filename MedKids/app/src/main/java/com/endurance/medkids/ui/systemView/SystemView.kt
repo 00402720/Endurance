@@ -8,13 +8,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 
 import com.endurance.medkids.R
 
+
 import com.endurance.medkids.databinding.FragmentSystemViewBinding
+import com.endurance.medkids.ui.infoView.viewmodels.SystemViewModel
 
-class systemView : Fragment() {
+class SystemView : Fragment() {
 
+    private val systemViewModel: SystemViewModel by activityViewModels {
+        SystemViewModel.Factory
+    }
     private lateinit var binding: FragmentSystemViewBinding
     private lateinit var mDialog: Dialog
 
@@ -36,5 +42,13 @@ class systemView : Fragment() {
             mDialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             mDialog.show()
         }
+
+        setViewModel()
+
+
+    }
+
+    private fun setViewModel(){
+        binding.viewmodel = systemViewModel
     }
 }

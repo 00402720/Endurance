@@ -54,6 +54,6 @@
     </fragment>
     <fragment
         android:id="@+id/systemView"
-        android:name="com.endurance.medkids.ui.systemView.systemView"
+        android:name="com.endurance.medkids.ui.systemView.SystemView"
         android:label="systemView" />
 </navigation>
