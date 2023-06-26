@@ -19,4 +19,9 @@
     <color name="link_color">#4D6E74</color>
     <color name="register_button">#91D3F8</color>
     <color name="send_button">#EEC3AC</color>
+
+    <color name="level2_card">#CE8E6A</color>
+    <color name="level3_card">#AE653C</color>
+    <color name="level4_card">#8A3403</color>
+
 </resources>
