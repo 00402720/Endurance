@@ -36,7 +36,10 @@ class ContentView : Fragment() {
            it.findNavController().navigate(R.id.action_contentView_to_infoView)
         }
 
-    }
+        binding.testYourKnowledge?.setOnClickListener{
+            it.findNavController().navigate(R.id.action_contentView_to_levels)
+        }
+}
 
 
 }

@@ -85,6 +85,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/test_your_knowledge"
                 android:layout_width="324dp"
                 android:layout_height="219dp"
                 android:layout_marginTop="20dp"
