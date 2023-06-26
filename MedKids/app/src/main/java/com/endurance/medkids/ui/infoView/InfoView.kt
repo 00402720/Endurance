@@ -9,22 +9,22 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.endurance.medkids.R
-import com.endurance.medkids.data.model.CardInfoModel
+import com.endurance.medkids.data.model.BodySystemModel
 import com.endurance.medkids.databinding.FragmentInfoViewBinding
-import com.endurance.medkids.ui.infoView.recyclerview.CardRecyclerViewAdapter
-import com.endurance.medkids.ui.infoView.viewmodels.CardViewModel
+import com.endurance.medkids.ui.infoView.recyclerview.SystemRecyclerViewAdapter
+import com.endurance.medkids.ui.infoView.viewmodels.SystemViewModel
 
 
 class InfoView : Fragment() {
 
-    private val cardInfoViewModel: CardViewModel by activityViewModels{
-        CardViewModel.Factory
+    private val systemViewModel: SystemViewModel by activityViewModels{
+        SystemViewModel.Factory
     }
 
 
     private lateinit var binding: FragmentInfoViewBinding
 
-    private lateinit var adapter: CardRecyclerViewAdapter
+    private lateinit var adapter: SystemRecyclerViewAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,23 +40,23 @@ class InfoView : Fragment() {
 
     }
 
-    private fun showSelectedItem(card : CardInfoModel){
-        cardInfoViewModel.setSelectedCard(card)
+    private fun showSelectedItem(system : BodySystemModel){
+        systemViewModel.setSelectedSystem(system)
         findNavController().navigate(R.id.action_infoView_to_systemView)
     }
-    private fun displayCard(){
-        adapter.setData(cardInfoViewModel.getCards())
+    private fun displaySystem(){
+        adapter.setData(systemViewModel.getSystems())
         adapter.notifyDataSetChanged()
     }
 
     private fun setRecyclerView(view: View){
         binding.cardItemView.layoutManager = LinearLayoutManager(view.context)
-        adapter = CardRecyclerViewAdapter {
-            selectedCard ->
-            showSelectedItem(selectedCard)
+        adapter = SystemRecyclerViewAdapter {
+            selectedSystem ->
+            showSelectedItem(selectedSystem)
         }
         binding.cardItemView.adapter = adapter
-        displayCard()
+        displaySystem()
     }
 
 
