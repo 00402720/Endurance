@@ -15,4 +15,9 @@
     <color name="card_vejiga">#EEACAC</color>
     <color name="card_cerebro">#EEE7AC</color>
     <color name="card_emoji">#F5F5F5</color>
+    <color name="sesion_card">#D9D9D9</color>
+    <color name="level1_card">#EEC3AC</color>
+    <color name="level2_card">#CE8E6A</color>
+    <color name="level3_card">#AE653C</color>
+    <color name="level4_card">#8A3403</color>
 </resources>

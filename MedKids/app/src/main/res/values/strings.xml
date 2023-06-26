@@ -9,4 +9,6 @@
     <string name="titlecard2" translatable="false">TEST YOUR</string>
     <string name="tittlecard3" translatable="false">knowledge</string>
     <string name="titlefi" translatable="false">¡DATO DE HOY!</string>
+    <string name="test_your">TEST YOUR</string>
+    <string name="knowledge">knowledge</string>
 </resources>
