@@ -35,6 +35,7 @@ class ContentView : Fragment() {
         binding.cardViewLearnAbout.setOnClickListener {
            it.findNavController().navigate(R.id.action_contentView_to_infoView)
         }
+
     }
 
 

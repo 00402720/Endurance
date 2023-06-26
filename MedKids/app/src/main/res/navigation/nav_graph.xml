@@ -42,6 +42,9 @@
         <action
             android:id="@+id/action_contentView_to_infoView"
             app:destination="@id/infoView" />
+        <action
+            android:id="@+id/action_contentView_to_levels"
+            app:destination="@id/levels" />
     </fragment>
     <fragment
         android:id="@+id/infoView"
@@ -74,4 +77,8 @@
         android:id="@+id/systemView"
         android:name="com.endurance.medkids.ui.systemView.systemView"
         android:label="systemView" />
+    <fragment
+        android:id="@+id/levels"
+        android:name="com.endurance.medkids.ui.levelsView.Levels"
+        android:label="Levels" />
 </navigation>
