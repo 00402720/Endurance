@@ -8,11 +8,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.fragment.app.activityViewModels
+import com.bumptech.glide.Glide
 
 import com.endurance.medkids.R
-
-
 import com.endurance.medkids.databinding.FragmentSystemViewBinding
 import com.endurance.medkids.ui.infoView.viewmodels.SystemViewModel
 
@@ -37,18 +37,46 @@ class SystemView : Fragment() {
 
         mDialog = Dialog(requireContext())
 
+
         binding.floatingActionInfoSightNose.setOnClickListener {
             mDialog.setContentView(R.layout.infosightnose)
             mDialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             mDialog.show()
         }
 
+
         setViewModel()
 
-
     }
 
-    private fun setViewModel(){
+
+
+    private fun setViewModel() {
         binding.viewmodel = systemViewModel
+
+        val imageView: ImageView? = binding.imagePuzzleImg
+
+        // Observa los cambios en la propiedad puzzle_image en el ViewModel
+        systemViewModel.puzzle_image.observe(viewLifecycleOwner) { imageResId ->
+            // Verifica si el valor de puzzle_image no es nulo
+            if (imageResId != null) {
+                if (imageView != null) {
+                    Glide.with(this)
+                        .load(imageResId)
+                        .into(imageView)
+                }
+            }
+        }
     }
-}
+ }
+
+
+
+
+
+
+
+
+
+
+

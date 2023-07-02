@@ -9,7 +9,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.endurance.medkids.R
-import com.endurance.medkids.data.model.BodySystemModel
+import com.endurance.medkids.network.dto.BodySystemModel
 import com.endurance.medkids.databinding.FragmentInfoViewBinding
 import com.endurance.medkids.ui.infoView.recyclerview.SystemRecyclerViewAdapter
 import com.endurance.medkids.ui.infoView.viewmodels.SystemViewModel

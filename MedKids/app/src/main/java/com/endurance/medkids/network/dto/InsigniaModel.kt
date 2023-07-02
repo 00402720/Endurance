@@ -1,4 +1,4 @@
-package com.endurance.medkids.data.model
+package com.endurance.medkids.network.dto
 
 data class InsigniaModel(
     val name: String,

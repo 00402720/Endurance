@@ -71,10 +71,10 @@
                     app:cardElevation="5dp">
 
                     <ImageView
+                        android:id="@+id/image_puzzle_img"
                         android:layout_width="400dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@{viewmodel.puzzle_image}" />
+                        android:layout_height="400dp"
+                        android:layout_gravity="center" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"

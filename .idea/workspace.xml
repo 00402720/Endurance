@@ -4,7 +4,53 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27c83a26-02eb-44e8-b165-7298739e36b7" name="Changes" comment="" />
+    <list default="true" id="27c83a26-02eb-44e8-b165-7298739e36b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/ic_logo-playstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/ApiResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/dto/FunFactModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/dto/RankModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/retrofit/RetrofitInstance.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/service/AuthService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/drawable/ic_logo_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/drawable/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/drawable/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/drawable/logomk.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-hdpi/ic_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-hdpi/ic_logo_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-hdpi/ic_logo_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-mdpi/ic_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-mdpi/ic_logo_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-mdpi/ic_logo_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-xhdpi/ic_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-xhdpi/ic_logo_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-xhdpi/ic_logo_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-xxhdpi/ic_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-xxhdpi/ic_logo_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-xxhdpi/ic_logo_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-xxxhdpi/ic_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-xxxhdpi/ic_logo_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/mipmap-xxxhdpi/ic_logo_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/SystemViewReviewerApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/SystemViewReviewerApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/data/dummydata.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/data/dummydata.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/data/model/BodyPartModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/dto/BodyPart/BodyPartRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/data/model/BodySystemModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/dto/BodySystemModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/data/model/FunFactModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/data/model/InsigniaModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/dto/InsigniaModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/data/model/LevelModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/dto/LevelModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/data/model/ProfilePictureModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/dto/ProfilePictureModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/data/model/RankModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/data/model/UserModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/network/dto/UserModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/repositories/SystemViewRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/repositories/SystemViewRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/ui/infoView/InfoView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/ui/infoView/InfoView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/ui/infoView/recyclerview/SystemRecyclerViewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/ui/infoView/recyclerview/SystemRecyclerViewAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/ui/infoView/recyclerview/SystemRecyclerViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/ui/infoView/recyclerview/SystemRecyclerViewHolder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/ui/infoView/viewmodels/SystemViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/java/com/endurance/medkids/ui/infoView/viewmodels/SystemViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MedKids/app/src/main/res/layout/fragment_content_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MedKids/app/src/main/res/layout/fragment_content_view.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,15 +67,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/home/marcela/Escritorio/Endurance/MedKids"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/marcela/Escritorio/Endurance/MedKids&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

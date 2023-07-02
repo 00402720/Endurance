@@ -5,14 +5,15 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.endurance.medkids.SystemViewReviewerApplication
-import com.endurance.medkids.data.model.BodySystemModel
+import com.endurance.medkids.network.dto.BodySystemModel
 import com.endurance.medkids.repositories.SystemViewRepository
 
 class SystemViewModel(private val repository: SystemViewRepository) : ViewModel() {
 
+
     var title = MutableLiveData("")
-    var section_image = MutableLiveData("")
-    var puzzle_image = MutableLiveData("")
+    var section_image = MutableLiveData<Int>()
+    var puzzle_image = MutableLiveData<Int>()
     var color = MutableLiveData<Int>()
     var status = MutableLiveData("")
 
