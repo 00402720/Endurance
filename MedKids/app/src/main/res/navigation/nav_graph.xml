@@ -23,10 +23,6 @@
         android:name="com.endurance.medkids.ui.login.LoginView"
         android:label="LoginView" >
         <action
-            android:id="@+id/btnLogin"
-            app:destination="@id/contentView"
-            app:enterAnim="@anim/slide_in" />
-        <action
             android:id="@+id/action_loginView_to_loadingView"
             app:destination="@id/loadingView"
             app:enterAnim="@android:anim/slide_in_left" />
@@ -34,6 +30,9 @@
             android:id="@+id/action_loginView_to_forgotCredentials"
             app:destination="@id/forgotCredentials"
             app:enterAnim="@anim/slide_in" />
+        <action
+            android:id="@+id/action_loginView_to_contentView"
+            app:destination="@id/contentView" />
     </fragment>
     <fragment
         android:id="@+id/contentView"
@@ -56,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/sign_Up"
-        android:name="com.endurance.medkids.ui.sign_up.Sign_Up"
+        android:name="com.endurance.medkids.ui.createuser.CreateUserFragment"
         android:label="fragment_sign__up"
         tools:layout="@layout/fragment_sign__up" >
         <action

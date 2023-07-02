@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.endurance.medkids.ui.login.viewmodel.LoginViewModel" />
+
+    </data>
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:id="@+id/linearLayout2"
@@ -33,12 +39,12 @@
                 android:textAlignment="center">
 
                 <TextView
-                    android:id="@+id/username_tv"
+                    android:id="@+id/email_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="25dp"
-                    android:text="Username: "
+                    android:text="Email: "
                     android:textColor="@color/black"
                     android:textSize="18dp" />
 
@@ -49,10 +55,12 @@
                     android:layout_marginRight="15dp">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_input"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:background="@drawable/imput_text"
                         android:shadowRadius="15"
+                        android:text="@={viewmodel.email}"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,11 +81,13 @@
                     android:layout_marginRight="15dp">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_input"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:background="@drawable/imput_text"
                         android:inputType="textPassword"
                         android:shadowRadius="15"
+                        android:text="@={viewmodel.password}"
                         android:textColor="@color/black"
                         android:textColorHint="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -107,6 +117,7 @@
                     android:layout_marginTop="10dp"
                     android:background="@drawable/button_background"
                     android:elevation="13dp"
+                    android:onClick="@{() -> viewmodel.onLogin()}"
                     android:text="Login"
                     android:textAllCaps="true"
                     android:textColor="@color/black"

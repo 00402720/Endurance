@@ -2,13 +2,18 @@
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.endurance.medkids.ui.createuser.viewmodel.CreateUserViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/background"
-        tools:context=".ui.sign_up.Sign_Up">
+        tools:context=".ui.createuser.CreateUserFragment">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnReturn_to_main"
@@ -55,6 +60,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="46dp"
+
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp">
 
@@ -62,8 +68,10 @@
                         android:id="@+id/user_ti"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
+                        android:text="@={viewmodel.username}"
                         android:background="@android:drawable/edit_text"
                         android:shadowRadius="15"
+                        android:inputType="textEmailAddress"
                         android:textColor="@color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,11 +92,12 @@
                     android:layout_marginRight="15dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/email_ti"
+                        android:id="@+id/email_input_register"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
+                        android:text="@={viewmodel.email}"
                         android:background="@android:drawable/edit_text"
-                        android:inputType="textPassword"
+                        android:inputType="textEmailAddress"
                         android:shadowRadius="15"
                         android:textColor="@color/black"
                         android:textColorHint="@color/black" />
@@ -111,9 +120,11 @@
                     android:layout_marginRight="15dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/password_ti"
+                        android:id="@+id/password_input_register"
                         android:layout_width="match_parent"
+                        android:text="@={viewmodel.password}"
                         android:layout_height="35dp"
+                        android:inputType="textPassword"
                         android:background="@android:drawable/edit_text"
                         android:shadowRadius="15"
                         android:textColor="@color/black" />
@@ -127,6 +138,7 @@
                     android:layout_marginTop="35dp"
                     android:background="@drawable/button_register"
                     android:elevation="13dp"
+                    android:onClick="@{() -> viewmodel.onCreateUser()}"
                     android:text="Register"
                     android:textAllCaps="true"
                     android:textColor="@color/black"
