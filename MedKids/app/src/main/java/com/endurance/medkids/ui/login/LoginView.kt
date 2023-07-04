@@ -74,6 +74,7 @@ class LoginView : Fragment() {
             is LoginUiStatus.Success -> {
                 loginViewModel.clearStatus()
                 loginViewModel.clearData()
+                app.saveAuthToken(status.token)
                 findNavController().navigate(R.id.action_loginView_to_contentView)
             }
 

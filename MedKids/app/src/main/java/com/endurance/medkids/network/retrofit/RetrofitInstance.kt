@@ -10,6 +10,12 @@ const val BASE_URL = "https://marceruiz.shop/"
 
 object RetrofitInstance {
 
+    private var token = ""
+
+
+    fun setToken(token: String) {
+        this.token = token
+    }
 
     private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
@@ -18,7 +24,7 @@ object RetrofitInstance {
 
 
     fun getLoginService(): AuthService {
-        return  retrofit.create(AuthService::class.java)
+        return retrofit.create(AuthService::class.java)
     }
 }
 

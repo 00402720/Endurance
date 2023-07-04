@@ -9,6 +9,10 @@
             type="com.endurance.medkids.ui.login.viewmodel.LoginViewModel" />
 
     </data>
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:id="@+id/linearLayout2"
@@ -157,5 +161,6 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </layout>
 

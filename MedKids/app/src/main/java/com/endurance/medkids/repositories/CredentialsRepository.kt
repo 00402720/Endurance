@@ -13,7 +13,7 @@ class CredentialsRepository(private val api: AuthService) {
     suspend fun login(email: String, password: String): ApiResponse<String> {
         try {
             val response = api.login(LoginRequest(email, password))
-            return ApiResponse.Success(response.message)
+            return ApiResponse.Success(response.token)
 
         } catch (e: HttpException) {
             if (e.code() == 400) {

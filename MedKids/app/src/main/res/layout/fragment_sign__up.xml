@@ -7,6 +7,10 @@
             name="viewmodel"
             type="com.endurance.medkids.ui.createuser.viewmodel.CreateUserViewModel" />
     </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout2"
@@ -33,6 +37,7 @@
             android:layout_width="292dp"
             android:layout_height="400dp"
             android:layout_marginTop="25dp"
+
             app:cardBackgroundColor="@color/sesion_card"
             app:cardCornerRadius="25dp"
             app:cardElevation="10dp"
@@ -161,4 +166,5 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/medkids" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </layout>

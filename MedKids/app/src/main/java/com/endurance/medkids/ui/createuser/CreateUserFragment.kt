@@ -36,6 +36,11 @@ class CreateUserFragment : Fragment() {
         setViewModel()
         observeStatus()
 
+        binding.btnReturnToMain.setOnClickListener {
+            it.findNavController().navigate(R.id.action_sign_Up_to_loadingView)
+        }
+
+
     }
 
     private fun setViewModel() {

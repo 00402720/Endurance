@@ -58,7 +58,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-medium"
-                            android:text="José"
+                            android:text=""
+                            tools:text="José"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="50sp"
@@ -70,6 +71,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-medium"
                             android:text="Grandmaster"
+                            tools:text="Grandmaster"
                             android:textAllCaps="false"
                             android:textColor="@color/black"
                             android:textSize="17sp"
@@ -119,6 +121,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:orientation="vertical"
                 android:background="@color/button_login"
                 android:padding="16dp">
 
@@ -130,6 +133,11 @@
                     android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold" />
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"/>
+
 
             </LinearLayout>
 

@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavOptions
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.endurance.medkids.R
 import com.endurance.medkids.databinding.FragmentFirstViewBinding
@@ -23,6 +24,8 @@ import com.endurance.medkids.databinding.FragmentFirstViewBinding
         ): View {
             binding = FragmentFirstViewBinding.inflate(inflater, container, false)
             val view = binding.root
+            // Agrega la siguiente línea para obtener el NavController
+
 
             Handler(Looper.myLooper()!!).postDelayed({
                 val navOptions = NavOptions.Builder()
