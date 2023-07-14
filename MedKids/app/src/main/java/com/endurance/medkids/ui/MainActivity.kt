@@ -8,19 +8,34 @@ import android.text.SpannableString
 import android.text.style.ImageSpan
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import androidx.appcompat.app.ActionBar
 import androidx.core.content.ContextCompat
 import com.endurance.medkids.R
 import com.endurance.medkids.databinding.ActivityMainBinding
+import com.endurance.medkids.ui.infoView.ContentView
+import com.endurance.medkids.ui.profile.perfil
 
 class MainActivity : AppCompatActivity() {
 
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var actionBar: ActionBar
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+      /*  actionBar = supportActionBar!!
+        actionBar.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+        actionBar.setCustomView(R.menu.menu)
+        val actionProfile = actionBar.customView.findViewById<View>(R.id.usuario)
+        val actionHome = actionBar.customView.findViewById<View>(R.id.home)
+
+        actionProfile.setOnClickListener {
+         }*/
+
+
 
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -41,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.home -> {
-                // Acción a realizar cuando se selecciona el ícono del menú
+
                 return true
             }
         }
@@ -50,6 +65,21 @@ class MainActivity : AppCompatActivity() {
 
 
 
+    private fun abrirFragmentoPerfil() {
+        // Reemplazar el código para abrir el fragmento de perfil
+        val perfilFragment = perfil()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.profile, perfilFragment)
+            .commit()
+    }
+
+    private fun abrirFragmentoInicio() {
+        // Reemplazar el código para abrir el fragmento de inicio
+        val inicioFragment = ContentView()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.contentView, inicioFragment)
+            .commit()
+    }
 
 
 }

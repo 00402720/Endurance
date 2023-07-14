@@ -107,7 +107,7 @@
                             app:srcCompat="@drawable/exclamation_rose" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingAction2"
+                            android:id="@+id/btninfosightAlveoli"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_marginTop="316dp"
@@ -123,7 +123,7 @@
                             app:srcCompat="@drawable/exclamation_rose" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingAction3"
+                            android:id="@+id/btninfosightPharynx"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_marginTop="180dp"
@@ -140,7 +140,7 @@
                             app:srcCompat="@drawable/exclamation_rose" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingAction4"
+                            android:id="@+id/btnsightBronchi"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_marginTop="380dp"
@@ -157,7 +157,7 @@
                             app:srcCompat="@drawable/exclamation_rose" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingAction5"
+                            android:id="@+id/btninfoSightLarynx"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_marginTop="228dp"
@@ -174,7 +174,7 @@
                             app:srcCompat="@drawable/exclamation_rose" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingAction6"
+                            android:id="@+id/btninfosightTrachea"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_marginTop="288dp"
@@ -191,7 +191,7 @@
                             app:srcCompat="@drawable/exclamation_rose" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingAction7"
+                            android:id="@+id/btninfosightlungs"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_marginTop="380dp"

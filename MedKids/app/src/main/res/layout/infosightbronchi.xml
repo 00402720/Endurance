@@ -38,18 +38,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="nose"
+                        android:text="Bronchi"
                         android:layout_marginStart="10dp"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
-                        android:textSize="40sp"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
                     <ImageView
                         android:id="@+id/image_nose"
                         android:layout_marginStart="15dp"
                         android:layout_width="199dp"
                         android:layout_height="221dp"
-                        android:src="@drawable/narizrecortada"/>
+                        android:src="@drawable/bronqueo"/>
 
                 </LinearLayout>
 
@@ -61,6 +61,9 @@
                     android:orientation="vertical"
                     android:padding="35dp">
 
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
                     <TextView
                         android:id="@+id/information_nose"
                         android:layout_width="match_parent"
@@ -68,9 +71,9 @@
                         android:fontFamily="sans-serif"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="10dp"
-                        android:text="The nose is the primary organ of the respiratory system responsible for the sense of smell and filtering, warming, and humidifying the air we breathe."
+                        android:text="Bronchi are the main airways that branch off from the trachea (windpipe) and extend into the lungs, allowing air to flow in and out of the respiratory system."
                         android:textColor="@color/black"
-                        android:textSize="25sp" />
+                        android:textSize="25sp" /></ScrollView>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -78,5 +81,3 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
-
-

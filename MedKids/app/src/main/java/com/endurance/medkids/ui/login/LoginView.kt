@@ -41,7 +41,9 @@ class LoginView : Fragment() {
 
         setViewModel()
         observeStatus()
-
+        /*binding.btnLogin.setOnClickListener {
+            it.findNavController().navigate(R.id.action_loginView_to_contentView)
+        }*/
         binding.btnReturn.setOnClickListener {
             it.findNavController().navigate(R.id.action_loginView_to_loadingView)
         }
@@ -54,17 +56,17 @@ class LoginView : Fragment() {
     private fun setViewModel() {
         binding.viewmodel = loginViewModel
     }
-
     private fun observeStatus() {
         loginViewModel.status.observe(viewLifecycleOwner) {
             status -> handleUiStatus(status)
         }
     }
 
-    private fun handleUiStatus(status: LoginUiStatus) {
+   private fun handleUiStatus(status: LoginUiStatus) {
+        val preferences =
         when (status) {
             is LoginUiStatus.Error -> {
-                Toast.makeText(requireContext(), "An error has occurred", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Wrong information", Toast.LENGTH_SHORT).show()
             }
 
             is LoginUiStatus.ErrorWithMessage -> {
@@ -76,6 +78,7 @@ class LoginView : Fragment() {
                 loginViewModel.clearData()
                 app.saveAuthToken(status.token)
                 findNavController().navigate(R.id.action_loginView_to_contentView)
+
             }
 
             else -> {}

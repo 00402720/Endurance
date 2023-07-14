@@ -43,6 +43,38 @@ class SystemView : Fragment() {
             mDialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             mDialog.show()
         }
+        binding.btninfoSightLarynx.setOnClickListener {
+            mDialog.setContentView(R.layout.infosightlarynx)
+            mDialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            mDialog.show()
+        }
+        binding.btninfosightAlveoli.setOnClickListener {
+            mDialog.setContentView(R.layout.infosightalveoli)
+            mDialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            mDialog.show()
+        }
+        binding.btninfosightlungs.setOnClickListener {
+            mDialog.setContentView(R.layout.infosightlungs)
+            mDialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            mDialog.show()
+        }
+        binding.btnsightBronchi.setOnClickListener {
+            mDialog.setContentView(R.layout.infosightbronchi)
+            mDialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            mDialog.show()
+        }
+        binding.btninfosightTrachea.setOnClickListener {
+            mDialog.setContentView(R.layout.infosighttrachea)
+            mDialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            mDialog.show()
+        }
+        binding.btninfosightPharynx.setOnClickListener {
+            mDialog.setContentView(R.layout.infosightpharynx)
+            mDialog.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            mDialog.show()
+        }
+
+
 
 
         setViewModel()

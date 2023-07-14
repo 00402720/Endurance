@@ -3,10 +3,10 @@ package com.endurance.medkids.network.retrofit
 import com.endurance.medkids.network.service.AuthService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 
 
-const val BASE_URL = "https://marceruiz.shop/"
+
+const val BASE_URL = "https://thefashionlab-sv.com/"
 
 object RetrofitInstance {
 

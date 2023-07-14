@@ -38,18 +38,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="nose"
+                        android:text="Alveoli"
                         android:layout_marginStart="10dp"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
-                        android:textSize="40sp"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
                     <ImageView
                         android:id="@+id/image_nose"
                         android:layout_marginStart="15dp"
                         android:layout_width="199dp"
                         android:layout_height="221dp"
-                        android:src="@drawable/narizrecortada"/>
+                        android:src="@drawable/alveolo"/>
 
                 </LinearLayout>
 
@@ -68,7 +68,7 @@
                         android:fontFamily="sans-serif"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="10dp"
-                        android:text="The nose is the primary organ of the respiratory system responsible for the sense of smell and filtering, warming, and humidifying the air we breathe."
+                        android:text="Alveoli are tiny air sacs in the lungs where the exchange of oxygen and carbon dioxide occurs during the process of breathing."
                         android:textColor="@color/black"
                         android:textSize="25sp" />
                 </LinearLayout>
@@ -78,5 +78,3 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
-
-

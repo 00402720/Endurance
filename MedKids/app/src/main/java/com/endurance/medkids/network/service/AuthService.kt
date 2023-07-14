@@ -13,14 +13,13 @@ import retrofit2.http.PUT
 
 interface AuthService {
 
-        @GET("api/body-system")
-        fun getBodySystem(): Call<BodySystemModel>
+
 
 
         @POST("api/user/create")
         suspend fun createUser(@Body credentials: CreateRequest): CreateResponse
 
-        @POST("api/user")
+        @POST("api/login")
         suspend fun login(@Body credentials: LoginRequest): LoginResponse
 
 

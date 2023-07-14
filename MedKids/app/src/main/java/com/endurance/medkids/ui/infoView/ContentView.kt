@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.endurance.medkids.R
+import com.endurance.medkids.RetrofitApplication
 
 import com.endurance.medkids.databinding.FragmentContentViewBinding
 
@@ -19,6 +20,10 @@ class ContentView : Fragment() {
 
 
     private lateinit var binding: FragmentContentViewBinding
+
+    val app by lazy{
+        requireActivity().application as  RetrofitApplication
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -3,14 +3,19 @@ package com.endurance.medkids
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
+import com.endurance.medkids.network.data.systems
 import com.endurance.medkids.network.retrofit.RetrofitInstance
 import com.endurance.medkids.repositories.CredentialsRepository
+import com.endurance.medkids.repositories.SystemViewRepository
 
 class RetrofitApplication : Application() {
+
     private val prefs: SharedPreferences by lazy {
         getSharedPreferences("Retrofit", Context.MODE_PRIVATE)
     }
-
+    val systemViewRepository: SystemViewRepository by lazy {
+        SystemViewRepository(systems)
+    }
 
     private fun getAPIService() = with(RetrofitInstance) {
         setToken(getToken())

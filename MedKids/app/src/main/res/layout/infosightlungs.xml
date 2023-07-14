@@ -38,18 +38,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:text="nose"
+                        android:text="Lungs"
                         android:layout_marginStart="10dp"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
-                        android:textSize="40sp"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
                     <ImageView
                         android:id="@+id/image_nose"
                         android:layout_marginStart="15dp"
                         android:layout_width="199dp"
                         android:layout_height="221dp"
-                        android:src="@drawable/narizrecortada"/>
+                        android:src="@drawable/pulmon"/>
 
                 </LinearLayout>
 
@@ -66,10 +66,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="246dp"
                         android:fontFamily="sans-serif"
+                        android:textColor="@color/black"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="10dp"
-                        android:text="The nose is the primary organ of the respiratory system responsible for the sense of smell and filtering, warming, and humidifying the air we breathe."
-                        android:textColor="@color/black"
+                        android:text="The lungs are essential organs in the respiratory system that allow us to breathe, taking in oxygen and releasing carbon dioxide."
                         android:textSize="25sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -78,5 +78,3 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
-
-

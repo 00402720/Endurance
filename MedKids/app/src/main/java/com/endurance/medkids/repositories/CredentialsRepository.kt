@@ -13,7 +13,7 @@ class CredentialsRepository(private val api: AuthService) {
     suspend fun login(email: String, password: String): ApiResponse<String> {
         try {
             val response = api.login(LoginRequest(email, password))
-            return ApiResponse.Success(response.token)
+            return ApiResponse.Success(response.message)
 
         } catch (e: HttpException) {
             if (e.code() == 400) {
@@ -31,7 +31,7 @@ class CredentialsRepository(private val api: AuthService) {
 
         try {
             val response = api.createUser(CreateRequest(username, email, password))
-            return ApiResponse.Success(response.username)
+            return ApiResponse.Success(response.token)
         } catch (e: HttpException) {
             if (e.code() == 400){
                 return  ApiResponse.ErrorWithMessage("Please provide username, email, and password")

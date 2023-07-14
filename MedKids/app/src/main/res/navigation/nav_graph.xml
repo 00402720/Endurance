@@ -17,6 +17,9 @@
             android:id="@+id/action_loadingView_to_sign_Up"
             app:destination="@id/sign_Up"
             app:enterAnim="@anim/slide_in" />
+        <action
+            android:id="@+id/action_loadingView_to_infoView"
+            app:destination="@id/infoView" />
     </fragment>
     <fragment
         android:id="@+id/loginView"
@@ -80,4 +83,8 @@
         android:id="@+id/levels"
         android:name="com.endurance.medkids.ui.levelsView.Levels"
         android:label="Levels" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.endurance.medkids.ui.profile.perfil"
+        android:label="profile" />
 </navigation>
