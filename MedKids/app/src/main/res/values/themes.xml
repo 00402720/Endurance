@@ -1,8 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MedKids" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.MedKids" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/statusbar</item>
+        <item name="colorPrimaryDark">@color/statusbarnight</item>
+        <item name="android:displayOptions">useLogo</item>
+
+        <item name="android:statusBarColor">@color/statusbar</item>
+
+    </style>
+
+    <style name="Base.Theme.MedKids.NoActionBar" parent="Base.Theme.MedKids">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MenuIconStyle">
+        <item name="android:width">36dp</item>
+        <item name="android:height">36dp</item>
     </style>
 
     <style name="Theme.MedKids" parent="Base.Theme.MedKids" />
